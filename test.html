@@ -1,0 +1,86 @@
+<html>
+    <head> 
+        <title> test </title> 
+        <style> 
+        body { background-color: azure}
+          .myname {
+            border-style: solid; border-color:rgb(255, 89, 89); border-width:2px; border-radius: 4px;
+            font-weight:bolder ;
+                  }
+        .myname:hover {
+            background-color: rgb(255, 206, 247);
+            animation-duration: 1s;
+        }
+                  </style>
+    </head>
+    <body>
+        <h1 style="color:rgb(168, 101, 255)"> test </h1>
+        hello there <p>
+        my name is <br>
+        <div class="myname"> jessica </div>
+        <table border=5>
+            <tr> <td class="myname"> abc </td></tr>
+        </table>
+        <img src="https://pbs.twimg.com/profile_banners/20536157/1642537255/600x200"> <br>
+        <a href="https://mobile.twitter.com/google" target="_blank" title="yes"> page </a> <br>
+        <input type="checkbox"> to do </input> <br>
+        <div id="buttons">
+            <input type="radio" name="a"> pick one </input> <br/>
+            <input type="radio" name="a"> other </input>
+        </div>
+        <input id="in">
+        <button onclick="pressed()"> enter </button> <br>
+        <select> <option> one </option> <option> two </option></select>
+        <ul> <li> one </li> <li> two </li></ul>
+        <ol> <li> a </li> <li> b </li></ol>
+        
+        <div style="background-color: blueviolet; float: right; position:absolute"> &apos;  &amp; &lt;
+            &#x41;	😀	grinning face
+    2	U+1F603	😃	<code> grinning face </code> grinning face with big eyes
+    3	U+1F604</div>
+        <noscript> no </noscript>
+<br>
+<iframe height="400px" width="1000" src="https://blog.google/outreach-initiatives/grow-with-google/career-certificates-fund/?utm_source=social&utm_medium=owned&utm_campaign=socialfinance"> </iframe>
+<script lang="javascript">
+    function pressed() {
+        var id = document.getElementById("in").value;
+        var radio = document.createElement("input")
+        radio.setAttribute("id", id)
+        radio.setAttribute("type", "radio")
+        radio.setAttribute("name", "a")
+        document.getElementById("buttons").appendChild(radio)
+        var label = document.createElement("label")
+        label.setAttribute("for", id)
+        label.textContent = id
+        document.getElementById("buttons").appendChild(label)
+
+        $("#buttons").append($("input").attr("id", id).attr())
+    }
+
+    var o = {
+        f: {
+            sf: 3,
+            sf2: "abc",
+            sf3: [1,2],
+            sf4: true
+        }
+    }
+
+    <root>
+        <f>
+            <sf>3</sf>
+            <sf2>abc</sf2>
+            <sf3>
+                <item>1</item>
+                <item>2</item>
+            </sf3>
+            <sf3>1</sf3>
+            <sf3>2</sf3>
+            <sf4>true</sf4>
+        </f>
+    </root>
+
+    console.log(JSON.stringify(o, null, 2))
+</script> 
+</body>
+</html>
